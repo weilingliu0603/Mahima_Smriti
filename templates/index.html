@@ -1,0 +1,51 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+<title>Homepage</title>
+</head>
+
+<body class="oneColLiqCtrHdr">
+<div id="container">
+  <div id="header">
+    <a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='header1.png') }}" width="271" height="55" ></a>
+    <!-- end #header --></div>
+  <div id="mainContent">
+    <p>&nbsp;</p>
+    <p><b>Welcome! click on any Icon.</p>
+    <table width="840" height="227" border="0">
+      <tr>
+		<td width="184"><a href="{{url_for('addNewMember')}}"><img src="{{ url_for('static', filename='ADDmember.jpg') }}" width="100" height="110" alt="add item" /></a></td>
+		<td width="300"><a href="{{url_for('updateMember')}}"><img src="{{ url_for('static', filename='UPDATEmember.jpg') }}" width="100" height="110" /></td>
+		<td width="300"><a href="{{url_for('viewRevenue')}}"><img src="{{ url_for('static', filename='VIEWmonthlysalesrevenue.png') }}" width="100" height="110" /></td>
+		<td width="300"><a href="{{url_for('addTransaction')}}"><img src="{{ url_for('static', filename='ADDTransaction.png') }}" width="100" height="110" /></td>
+	  </tr>
+			<td width="184"><p><b>Add Member</p></td>
+			<td width="233"><p><b>Update Member</p></td>   
+			<td width="300"><p><b>View sales revenue</p></td>
+		    <td width="300"><p><b>Add new transaction</p></td>
+	  <tr>
+        <td width="214"><a href="{{url_for('DailyTransaction')}}"><img src="{{ url_for('static', filename='DailyTransaction.png') }}" width="100" height="110" /></td>
+        <td width="201"><a href="{{url_for('tranHistory')}}"><img src="{{ url_for('static', filename='viewinventory.png') }}" width="100" height="110" /></td>
+      </tr>
+	  
+	  <tr>
+
+
+	  </tr>
+	  <tr>
+		
+		<td width="224"><p><b>Daily Transaction</p></td>
+		<td width="211"><p><b>Member's Transaction History</p></td>
+
+      </tr>
+    </table>
+    <p>
+      <!-- end #mainContent -->
+    </p>
+  </div>
+  <div id="footer">
+    <p><img src="{{ url_for('static', filename='logo.png') }}" width="271" height="68" /></p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+</html>
