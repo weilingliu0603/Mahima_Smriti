@@ -62,10 +62,7 @@ def tranHistory():
     return flask.render_template('index.html') #tranHistory.html not coded yet
 
 if __name__ == '__main__':
-    app.run(port = 1230, debug=True)
-
-app.run(debug=True)
-
+    app.run(debug=True, use_reloader=True)
 
 
 
